@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ---------- -->
+    <!-- FONTS -->
+    <!-- ---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- ----------- -->
+    <!-- FAVICON -->
+    <!-- ----------- -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <!-- ----------- -->
+    <!-- STYLE CSS -->
+    <!-- ----------- -->
+    <link rel="stylesheet" href="register.css" />
+
+    <!-- -------- -->
+    <!-- SCRIPT -->
+    <!-- -------- -->
+    <script defer src="register.js"></script>
+
+    <!-- ---------- -->
+    <!-- TITLE -->
+    <!-- ---------- -->
+    <title>Registeration Form</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- ----------------- -->
+      <!-- WRAPPER -->
+      <!-- ----------------- -->
+      <div class="step__container">
+        <!-- -------------- -->
+        <!-- SIDEBAR -->
+        <!-- -------------- -->
+        <div class="sidebar">
+          <div class="step__indecater">
+            <div class="indecater__num">1</div>
+            <div class="indecater__text">
+              <p class="subtitle">STEP1</p>
+              <p class="mini__title">Your Info</p>
+            </div>
+          </div>
+          <div class="step__indecater">
+            <div class="indecater__num 2">2</div>
+            <div class="indecater__text">
+              <p class="subtitle">STEP2</p>
+              <p class="mini__title">Additional Info</p>
+            </div>
+          </div>
+          
+        </div>
+        <!-- form steps container -->
+        <div class="steps__container">
+          <!-- step1 -->
+          <form class="step" id="form">
+            <h3 class="main__title">Personal info</h3>
+            <p class="description">
+              Please provide your name, email address, and phone number.
+            </p>
+            <ul class="list">
+              <li class="list__item">
+                <div class="input__labe">
+                  <p class="label">Name</p>
+                  <p class="warning"></p>
+                </div>
+                <input
+                  type="text"
+                  name="userName"
+                  class="input"
+                  placeholder="e.g. Simran"
+                  required />
+              </li>
+              <li class="list__item">
+                <div class="input__labe">
+                  <p class="label">Email Address</p>
+                  <p class="warning"></p>
+                </div>
+                <input
+                  type="email"
+                  name="email"
+                  class="input"
+                  placeholder="e.g. simran@gmail.com"
+                  required />
+              </li>
+              <li class="list__item">
+                <div class="input__labe">
+                  <p class="label">Password</p>
+                  <p class="warning"></p>
+                </div>
+                <input
+                  type="password"
+                  name="password"
+                  class="input"
+                  placeholder="e.g. abc123"
+                  required />
+              </li>
+            </ul>
+          </form>
+          <!-- STEP 2 -->
+          <div class="step" id="step-2">
+            <h3 class="main__title">Select Departement</h3>
+
+            <div class="plan__card_container" id="plan-cards">
+              <div class="plan__card card">
+                <div class="plan__price">
+                  <p class="card__name" id="arcade">CSE</p>
+                  
+        
+                </div>
+              </div>
+              <div class="plan__card card">
+                <div class="plan__price">
+                  <p class="card__name" id="advance">IT</p>
+
+                </div>
+              </div>
+              <div class="plan__card card">
+                <div class="plan__price">
+                  <p class="card__name" id="pro">CA</p>
+
+
+                </div>
+              </div>
+            </div>
+            <p id="select-plan-error"></p>
+            
+          </div>
+          
+          <div class="step last__step" id="thank-you">
+            <div class="final__img">
+              <img src="./assets/images/icon-thank-you.svg" alt="" />
+            </div>
+            <h3 class="main__title">Thank you!</h3>
+            <p class="description">
+              Thanks for confirming your Registeration.
+            </p>
+          </div>
+          <!-- -------------- -->
+          <!-- BUTTON -->
+          <!-- -------------- -->
+          <div class="button__container">
+            <button class="button prev__button" id="prev-button">
+              Go Back
+            </button>
+            <button type="submit" class="button next__button" id="next-button">
+              Next Step
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
